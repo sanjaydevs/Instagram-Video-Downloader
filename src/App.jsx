@@ -18,19 +18,27 @@ function App() {
 
     } catch (error) {
       console.error("Error fetching video link:", error);
+      setErr("Something went wrong. Try again.");
     }
   };
 
   return (
     <div>
-      <input 
-      type="text"
-      placeholder="Enter the video url to be downloaded"
-      value={url}
-      onChange={(event) => setUrl(event.target.value)}
-      />
+      <div className="header">
+        <hr></hr>
 
-      <button onClick={handleDownload}>Download</button>
+
+
+      </div>
+
+
+
+      <h1>Instagram Reel Downloader</h1>
+
+      <div className="input-group mb-3">
+        <input onChange={(event) => setUrl(event.target.value)} value={url} type="text" placeholder="Enter the video url to be downloaded username"  className="form-control" aria-label="Recipient’s username" aria-describedby="button-addon2"/>
+        <button onClick={handleDownload} disabled={!url.trim()} type="button" className="btn btn-primary">Download</button>
+      </div>
 
       {downloadLink && (<div>
 
