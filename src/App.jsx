@@ -25,10 +25,11 @@ function App() {
   return (
     <div>
 
-      <h1>Instagram Reel Downloader</h1>
+      <h1 className="title">Instagram Reel Downloader</h1>
+      <h2 className="title-tag">Just Paste the URL and Download your Reel.</h2>
 
       <div className="input-group mb-3">
-        <input onChange={(event) => setUrl(event.target.value)} value={url} type="text" placeholder="Enter the video url to be downloaded username"  className="form-control" aria-label="Recipient’s username" aria-describedby="button-addon2"/>
+        <input onChange={(event) => setUrl(event.target.value)} value={url} type="text" placeholder="Paste Instagram Reel URL here"  className="form-control" aria-label="Recipient’s username" aria-describedby="button-addon2"/>
         <button onClick={handleDownload} disabled={!url.trim()} type="button" className="btn btn-primary">Download</button>
       </div>
 
@@ -43,7 +44,7 @@ function App() {
 
         </div>)}
       
-      {err && (<h2>{err}</h2>)}
+      {err && (<h2 className="Error_Display">{err}</h2>)}
 
     </div>
   )

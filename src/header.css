@@ -1,3 +1,19 @@
-ul{
-    list-style-type: none;
+nav {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height:80px;
+  background-color: rgb(232, 232, 232);
+  border-bottom: 1px solid ;
+}
+
+nav .navbar-brand,
+nav .nav-link {
+  color: rgb(0, 0, 0) !important; /* or any color you want */
+}
+
+
+.navbar-brand{
+     font-family: "Averia Sans Libre", sans-serif;
+  font-weight: 700;
+  font-style: bold;
 }

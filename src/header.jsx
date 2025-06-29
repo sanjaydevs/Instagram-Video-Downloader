@@ -8,13 +8,26 @@ import Nav from 'react'
 
 function Header(){
     return (
-        <Container>
-            <Row>
-                <Col>Sanjay S</Col>
-                <Col><a href="https://github.com/sanjaydevs">Github</a></Col>
-                <Col><a href="https://www.linkedin.com/in/sanjay-s-74551a2ba/">LinkedIn</a></Col>
-            </Row>
-        </Container>
+        <nav className="navbar navbar-expand-lg navbar-dark ">
+      <div className="container-fluid">
+        <span className="navbar-brand">Sanjay S</span>
+
+        <div className="collapse navbar-collapse">
+          <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li className="nav-item">
+              <a className="nav-link" href="https://your-portfolio-link.com" target="_blank" rel="noopener noreferrer">
+                Portfolio
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     )
     
 
