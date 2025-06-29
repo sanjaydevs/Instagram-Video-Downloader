@@ -24,14 +24,6 @@ function App() {
 
   return (
     <div>
-      <div className="header">
-        <hr></hr>
-
-
-
-      </div>
-
-
 
       <h1>Instagram Reel Downloader</h1>
 
