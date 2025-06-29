@@ -1,12 +1,75 @@
-# React + Vite
+Instagram Video Downloader - Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+This project is a simple Instagram Video Downloader built with Node.js (Express) for the backend and React for the frontend.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Backend
 
-## Expanding the ESLint configuration
+Technology: Node.js, Express, Cheerio, Axios, CORS
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Endpoints:
+
+POST /api/download - Accepts an Instagram URL, scrapes the page, and returns the direct video link.
+
+Key Libraries:
+
+axios - Fetch HTML data.
+
+cheerio - Parse HTML and extract video link.
+
+cors - Enable cross-origin requests from the frontend.
+
+Frontend
+
+Technology: React, Bootstrap (for styling)
+
+Components:
+
+Header - Displays site name and navigation links.
+
+App - Contains input for Instagram URL, download button, and video preview.
+
+Footer - Displays copyright info.
+
+Styling
+
+Basic CSS and Bootstrap classes used for layout and component styling.
+
+Global font and color schemes set in :root selector in CSS.
+
+How to Run
+
+Clone the repository.
+
+Install backend dependencies in the root folder:
+
+npm install
+
+Run backend server:
+
+node server.js
+
+Navigate to frontend folder, install dependencies:
+
+npm install
+
+Run frontend dev server:
+
+npm run dev
+
+Future Improvements
+
+Add error handling and user-friendly messages.
+
+Validate Instagram URLs more robustly.
+
+Improve UI with animations and responsive design.
+
+Optionally allow direct download with one click.
+
+Notes
+
+The video scraping depends on Instagram page structure, which might break if Instagram updates their site.
+
+Use responsibly and comply with Instagram's Terms of Service.
