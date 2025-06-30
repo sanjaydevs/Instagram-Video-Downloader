@@ -10,17 +10,17 @@ function Header(){
     return (
         <nav className="navbar navbar-expand-lg navbar-dark ">
       <div className="container-fluid">
-        <span className="navbar-brand">Sanjay S</span>
+        <span className="navbar-brand">Sanjay</span>
 
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link" href="https://your-portfolio-link.com" target="_blank" rel="noopener noreferrer">
-                Portfolio
+              <a className="nav-link" href="https://www.linkedin.com/in/sanjay-s-74551a2ba/" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+              <a className="nav-link" href="https://github.com/sanjaydevs" target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
             </li>

@@ -1,8 +1,7 @@
 nav {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  /* width: 100vw;
+  margin-left: calc(-50vw + 50%); */
   height:80px;
-  background-color: rgb(232, 232, 232);
   border-bottom: 1px solid ;
 }
 

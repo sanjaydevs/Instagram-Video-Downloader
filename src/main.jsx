@@ -11,7 +11,8 @@ createRoot(document.getElementById('root')).render(
       <App />
       </div>
       <div className="Footer">
-        <h2 className="Footer-text">© {new Date().getFullYear()}</h2>
+        <h2 className="Footer-text">© {new Date().getFullYear()} Sanjay</h2>
+        
       </div>
   </StrictMode>,
 )

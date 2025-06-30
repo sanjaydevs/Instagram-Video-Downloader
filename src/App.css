@@ -9,17 +9,29 @@ h1 {
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
+  padding:20px;
 }
 
 .Error_Display {
   font-size: 10px;
 }
 
-.title{
-  padding:20px;
-}
-
 .title-tag{
   font-size:smaller;
   padding-bottom:10px;
+}
+
+h2{
+  font-size:medium;
+}
+
+.Save-Section{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-success{
+  margin:10px;
+  background-color: #7638FA;
 }
