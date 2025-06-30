@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://github.com/sanjaydevs/Instagram-Video-Downloader",
+  "homepage": "https://sanjaydevs.github.io/Instagram-Video-Downloader/",
   "dependencies": {
     "axios": "^1.10.0",
     "bootstrap": "^5.3.7",
