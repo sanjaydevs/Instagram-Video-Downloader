@@ -1,6 +1,10 @@
-nav {
-  height:80px;
-  border-bottom: 1px solid ;
+nav .container-fluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
 }
 
 .nav-link {
@@ -17,3 +21,4 @@ nav {
   font-family: "Averia Sans Libre", sans-serif;
   font-weight: bold;
 }
+
