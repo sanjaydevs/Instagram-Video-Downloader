@@ -4,7 +4,12 @@ import { instagramGetUrl } from "instagram-url-direct";
 import cors from "cors";
 
 const app=express();
-const port=3001;
+
+const port = process.env.PORT || 3001;
+app.listen(port, () => {
+    console.log(`Listening on port ${port}`);
+});
+
 app.use(express.json());
 app.use(cors());
 
