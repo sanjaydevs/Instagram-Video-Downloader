@@ -10,7 +10,7 @@ function App() {
 
   const handleGetReel = async()=>{
     try{
-      const response = await axios.post("http://localhost:3001/api/download",{
+      const response = await axios.post("https://instagram-video-downloader-nho9.onrender.com/",{
         url:url,}
       );
       setDownloadLink(response.data.downloadLink);
