@@ -8,7 +8,7 @@ function App() {
   const [downloadLink, setDownloadLink] = useState(null);
   const [err, setErr] = useState(null);
 
-  const handleDownload = async()=>{
+  const handleGetReel = async()=>{
     try{
       const response = await axios.post("http://localhost:3001/api/download",{
         url:url,}
@@ -42,6 +42,12 @@ function App() {
   }
 };
 
+  const nextDownload = () =>{
+    setUrl("");
+    setDownloadLink(null);
+    setErr(null);
+  };
+
   return (
     <div>
 
@@ -50,17 +56,22 @@ function App() {
 
       <div className="input-group mb-3">
         <input onChange={(event) => setUrl(event.target.value)} value={url} type="text" placeholder="Paste Instagram Reel URL here"  className="form-control" aria-label="Recipient’s username" aria-describedby="button-addon2"/>
-        <button onClick={handleDownload} disabled={!url.trim()} type="button" className="btn btn-primary">Get Reel</button>
+        <button onClick={handleGetReel} disabled={!url.trim()} type="button" className="btn btn-primary">Get Reel</button>
       </div>
 
       {downloadLink && (<div className="Save-Section">
 
-        <video width= "50%" controls>
+        <video key={downloadLink} width= "50%" controls>
           <source src={downloadLink} type="video/mp4" />
           Your browser does not support the video tag.
           </video>
 
-        <button onClick={handleSaveVideo} className="btn btn-success">Save Video</button>
+        <button onClick={() => {
+                        handleSaveVideo();
+                        setTimeout(()=>{
+                          nextDownload();
+                        },3000);
+                          }} className="btn btn-success">Save Video</button>
 
         </div>)}
       

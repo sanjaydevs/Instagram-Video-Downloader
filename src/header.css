@@ -1,18 +1,19 @@
 nav {
-  /* width: 100vw;
-  margin-left: calc(-50vw + 50%); */
   height:80px;
   border-bottom: 1px solid ;
 }
 
-nav .navbar-brand,
-nav .nav-link {
-  color: rgb(0, 0, 0) !important; /* or any color you want */
+.nav-link {
+  color: rgb(0, 0, 0) ; /* or any color you want */
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
+.nav-link:hover{
+  color: #ff4081; /* any color you want */
+}
 
 .navbar-brand{
-     font-family: "Averia Sans Libre", sans-serif;
-  font-weight: 700;
-  font-style: bold;
+  color: rgb(0, 0, 0) ;
+  font-family: "Averia Sans Libre", sans-serif;
+  font-weight: bold;
 }

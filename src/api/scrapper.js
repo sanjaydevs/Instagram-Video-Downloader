@@ -25,14 +25,15 @@ app.post("/api/download", async (req,res)=>{
 
         if (videolink!== undefined){
             res.json({downloadLink : videolink});
+            console.log("res",{videolink});
         } else {
             res.json({error:"The link you have entered is invalid."});
-            console.log(res.error);
+            // console.log(res.error);
         }
     }
     catch (err){
         res.json({error : "There is a problem with the link you provided."});
-        console.log(res.error);
+        // console.log(res.error);
     }
 });
 

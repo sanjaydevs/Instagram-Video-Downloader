@@ -1,8 +1,4 @@
 :root {
-  font-family: "Smooch Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
   line-height: 1.5;
   color-scheme: light dark;
   font-synthesis: none;
@@ -13,6 +9,8 @@
 
 
 body {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
   margin: 0;
   background-color: #Ebe8fc;
   min-height: 100vh;

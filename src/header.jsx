@@ -8,7 +8,7 @@ import Nav from 'react'
 
 function Header(){
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark ">
+        <nav className="navbar navbar-expand-lg navbar-light ">
       <div className="container-fluid">
         <span className="navbar-brand">Sanjay</span>
 
