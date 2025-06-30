@@ -21,7 +21,9 @@ const getVideo = async url =>{
 
 };
 
-
+app.post("/",async (req,res)=>{
+    <h1>Server runnning</h1>
+})
 app.post("/api/download", async (req,res)=>{
     console.log("request coming in ....")
 
