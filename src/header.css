@@ -8,12 +8,12 @@ nav .container-fluid {
 }
 
 .nav-link {
-  color: rgb(0, 0, 0) ; /* or any color you want */
+  color: rgb(0, 0, 0) ;
   transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .nav-link:hover{
-  color: #ff4081; /* any color you want */
+  color: #ff4081;
 }
 
 .navbar-brand{
